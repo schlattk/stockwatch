@@ -1,14 +1,9 @@
 import * as React from 'react';
+
 import './App.css';
-
-import * as Mongoose from 'mongoose';
-
 import logo from './logo.svg';
 
-const DB_URI = process.env.DB_URI_STOCKWATCH;
-
-// Cloud MongoDB connection, via URI in .env file
-Mongoose.connect({DB_URI:any});
+import { mongoose } from '../server';
 
 class App extends React.Component {
   public render() {
