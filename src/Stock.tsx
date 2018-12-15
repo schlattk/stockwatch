@@ -1,5 +1,8 @@
 import * as React from 'react';
+<<<<<<< HEAD
 
+=======
+>>>>>>> konrad
 // import { mongoose } from '../server';
 
 class Stock extends React.Component {
@@ -20,6 +23,13 @@ class Stock extends React.Component {
 
   public render() {
     const stockData = Object.keys(this.state).map(i => this.state[i])[0];
+<<<<<<< HEAD
+=======
+  //  [{
+  //     name: 'open',
+  //     values: stockData.map((item: any, i: any) => ( { x: i, y: item.open }))
+  //   }]
+>>>>>>> konrad
 
     return (
       <div>
@@ -28,7 +38,12 @@ class Stock extends React.Component {
             Open: {item.open} | Close: {item.close}
           </li>
         ))}
+<<<<<<< HEAD
       </div>
+=======
+       </div> 
+        
+>>>>>>> konrad
     );
   }
 }
