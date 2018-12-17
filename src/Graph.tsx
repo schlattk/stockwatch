@@ -1,6 +1,8 @@
 import { ChartOptions } from 'chart.js';
 import * as React from 'react';
 import { Line } from 'react-chartjs-2';
+import apiCall from './apiCall';
+// import apiCall from './apiCall';
 
 
 export default class Chart extends React.Component<any> {
@@ -11,11 +13,11 @@ export default class Chart extends React.Component<any> {
     };
   }
   public componentDidMount() {
-    fetch(this.props.uri)
-    .then(result => result.json())
-    .then(result => {
-      this.setState({ data: result });
-    })
+      apiCall(this.props.uri)
+      .then((result: any) => result.json())
+      .then((result: any) => {
+        this.setState({ data: result });
+      })
   }
   public render() {
     const stockData = Object.keys(this.state).map(i => this.state[i])[0];
