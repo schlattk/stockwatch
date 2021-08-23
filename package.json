@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/enzyme-adapter-react-16": "^1.0.3",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "mongoose": "^5.3.14",
     "react": "^16.6.3",
     "react-chartjs-2": "^2.7.4",
